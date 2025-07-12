@@ -1,0 +1,80 @@
+/* styles.css */
+
+/* Main container styling */
+#main-container {
+    align: center middle;
+    background: $surface;
+    padding: 1;
+    height: 100%;
+}
+
+#main-content {
+    width: 70;
+    height: 25;
+    border: solid $primary;
+    background: $surface;
+    padding: 2;
+    margin: 1;
+    border: solid $accent;
+}
+
+/* Title styling */
+#title {
+    text-align: center;
+    text-style: bold;
+    color: $accent;
+    margin: 1 0;
+}
+
+/* Welcome message styling */
+#welcome {
+    text-align: center;
+    color: $success;
+    margin: 1 0;
+    text-style: italic;
+}
+
+/* Status message styling */
+#status {
+    text-align: center;
+    margin: 1 0;
+    color: $warning;
+    background: $surface-darken-1;
+    padding: 1;
+    border: solid $warning;
+}
+
+/* Button styling */
+Button {
+    margin: 1 0;
+    width: 100%;
+    text-align: center;
+}
+
+#start-btn {
+    background: $success;
+    color: $text;
+}
+
+#start-btn:hover {
+    background: $success-lighten-1;
+}
+
+#exit-btn {
+    background: $error;
+    color: $text;
+}
+
+#exit-btn:hover {
+    background: $error-lighten-1;
+}
+
+/* Header and Footer styling */
+Header {
+    background: $primary;
+    color: $text;
+}
+
+Footer {
+    background: $surface-darken-1;
+}
