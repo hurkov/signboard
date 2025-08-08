@@ -1,24 +1,23 @@
-/* styles.css */
-
-/* Main container styling */
+/* Centered responsive layout for all terminal sizes */
 #main-container {
     align: center middle;
     background: $surface;
     padding: 1;
-    height: 100%;
 }
 
 #main-content {
-    width: 70;
-    height: 25;
-    border: solid $primary;
+    width: 80%;
+    max-width: 120;
+    min-width: 40;
+    height: auto;
+    max-height: 25;
+    border: solid $accent;
     background: $surface;
     padding: 2;
     margin: 1;
-    border: solid $accent;
+    align: center middle;
 }
 
-/* Title styling */
 #title {
     text-align: center;
     text-style: bold;
@@ -26,7 +25,6 @@
     margin: 1 0;
 }
 
-/* Welcome message styling */
 #welcome {
     text-align: center;
     color: $success;
@@ -34,7 +32,6 @@
     text-style: italic;
 }
 
-/* Status message styling */
 #status {
     text-align: center;
     margin: 1 0;
@@ -44,20 +41,14 @@
     border: solid $warning;
 }
 
-/* Button styling */
 Button {
     margin: 1 0;
     width: 100%;
     text-align: center;
 }
 
-#start-btn {
-    background: $success;
+#verify-btn {
     color: $text;
-}
-
-#start-btn:hover {
-    background: $success-lighten-1;
 }
 
 #exit-btn {
@@ -65,11 +56,6 @@ Button {
     color: $text;
 }
 
-#exit-btn:hover {
-    background: $error-lighten-1;
-}
-
-/* Header and Footer styling */
 Header {
     background: $primary;
     color: $text;
@@ -77,4 +63,75 @@ Header {
 
 Footer {
     background: $surface-darken-1;
+}
+
+/* Responsive adjustments for different screen sizes */
+Screen {
+    align: center middle;
+}
+
+/* Main Menu Styles */
+#main-menu-container {
+    align: center middle;
+    background: $surface;
+    padding: 1;
+}
+
+#main-menu-content {
+    width: 80%;
+    max-width: 120;
+    min-width: 40;
+    height: auto;
+    max-height: 30;
+    border: solid $accent;
+    background: $surface;
+    padding: 2;
+    margin: 1;
+    align: center middle;
+}
+
+#main-title {
+    text-align: center;
+    text-style: bold;
+    color: $accent;
+    margin: 1 0;
+}
+
+#main-subtitle {
+    text-align: center;
+    color: $success;
+    margin: 1 0;
+    text-style: italic;
+}
+
+#start-btn {
+    background: $success;
+    color: $text;
+    margin: 1 0;
+    width: 100%;
+    text-align: center;
+}
+
+#train-btn {
+    background: $primary;
+    color: $text;
+    margin: 1 0;
+    width: 100%;
+    text-align: center;
+}
+
+#settings-btn {
+    background: orange;
+    color: black;
+    margin: 1 0;
+    width: 100%;
+    text-align: center;
+}
+
+#main-exit-btn {
+    background: $error;
+    color: $text;
+    margin: 1 0;
+    width: 100%;
+    text-align: center;
 }
